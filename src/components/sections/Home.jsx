@@ -5,11 +5,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animate } from "@/lib/utils";
 import { UseActiveLinkContext } from "@/context/ActiveLinkContext";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-
-  const {sectionsRefs} = UseActiveLinkContext()
+  const { sectionsRefs } = UseActiveLinkContext();
 
   const headingRef = useRef(null);
   const primaryButtonRef = useRef(null);
@@ -30,6 +30,15 @@ const Home = () => {
     };
   }, []);
 
+  // Function to handle CV download
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/cv/CV_Jeanne_Mari_Abag.pdf"; // Path to your CV file
+    link.download = "CV_Jeanne_Mari_Abag.pdf"; // Filename for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section
@@ -45,7 +54,7 @@ const Home = () => {
           ref={headingRef}
           className="2xl:text-[70px] xl:text-[60px] md:text-[50px] text-[38px] font-bold t-accent leading-tight"
         >
-          I'm Alex Walker <br />
+          I'm Jeanne Mari Abag <br />
           Digital designer and illustrator.
         </h1>
         <div className="2xl:mt-[51px] mt-[46px] flex items-center sm:flex-row flex-col gap-1">
@@ -62,8 +71,11 @@ const Home = () => {
             </Button>
           </div>
           <div className="sm:w-auto w-full" ref={downloadButtonRef}>
-            <Button className="2xl:h-[60px] h-[50px] 2xl:w-[227px] sm:w-[185px] w-full bg-transparent">
-              <span className="text-disabled">Download Cv</span>{" "}
+            <Button
+              className="2xl:h-[60px] h-[50px] 2xl:w-[227px] sm:w-[185px] w-full bg-transparent"
+              onClick={handleDownload}
+            >
+              <span className="text-disabled">Download CV</span>{" "}
               <ArrowDownToLine className="h-[22px] w-[22px] ml-[6px] text-disabled" />
             </Button>
           </div>

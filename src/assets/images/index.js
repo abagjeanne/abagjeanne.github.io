@@ -28,6 +28,7 @@ import figmaLogo from "./icons/icon-figma.svg";
 import photoshopLogo from "./icons/icon-photoshop.svg";
 import t01 from "./avatars/400x400_t01.webp"
 import t02 from "./avatars/400x400_t02.webp"
+import myPic from "./avatars/my-pic.jpg"
 
 export {
   favicon,
@@ -59,5 +60,6 @@ export {
   photoshopLogo,
   sketchLogo,
   t01,
-  t02
+  t02,
+  myPic,
 };

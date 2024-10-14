@@ -4,16 +4,15 @@ import { useEffect, useRef } from "react";
 import { animate } from "@/lib/utils";
 
 const Education = () => {
+  const educationRef = useRef(null);
 
-  const educationRef = useRef(null)
+  useEffect(() => {
+    const educationAnimation = animate(educationRef.current, 50);
 
-  useEffect(()=>{
-    const educationAnimation = animate(educationRef.current,50)
-
-    return ()=>{
-      educationAnimation.revert()
-    }
-  },[])
+    return () => {
+      educationAnimation.revert();
+    };
+  }, []);
 
   return (
     <div ref={educationRef}>

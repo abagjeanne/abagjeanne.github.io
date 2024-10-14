@@ -33,11 +33,11 @@ const About = () => {
         subtitle={"About Me"}
         title={<>Turning complex problems into simple design</>}
       />
-      <div className="flex flex-wrap 2xl:gap-[50px] gap-[30px]">
+      {/* <div className="flex flex-wrap 2xl:gap-[50px] gap-[30px]">
         {ACHIEVEMENTS.map((achievement, index) => (
           <AchievementsDetails key={index} {...achievement} position={index} />
         ))}
-      </div>
+      </div> */}
       <div className="flex xl:flex-row flex-col gap-5">
         <div className="flex flex-col 2xl:gap-6 gap-4 xl:w-2/3 w-full">
           <p

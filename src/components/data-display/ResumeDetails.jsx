@@ -29,12 +29,19 @@ const ResumeDetails = ({
     };
   }, []);
 
+  const formatDate = (date) => {
+    return new Date(date).toLocaleString("default", {
+      year: "numeric",
+      month: "long", // Use "short" for abbreviated month names
+    });
+  };
+
   return (
     <div className="2xl:py-11 py-10 flex md:flex-row flex-col border-b border-[#d1d5e0] dark:border-[#303033]">
       <div ref={dateRef} className="md:w-1/5 w-full">
         <span className="text-[15px] text-medium">
-          {new Date(startDate).getFullYear()} -{" "}
-          {currentlyHere ? "now" : new Date(endDate).getFullYear()}
+          {formatDate(startDate)} -<br/>{" "}
+          {currentlyHere ? "now" : formatDate(endDate)}
         </span>
       </div>
       <div className="md:w-2/5 w-full 2xl:pr-[50px] pr-[30px]">
@@ -48,7 +55,7 @@ const ResumeDetails = ({
             </>
           ) : (
             <>
-              in the <span className="font-bold text-bright">{source}</span> agency
+              in the <span className="font-bold text-bright">{source}</span>
             </>
           )}
         </p>

@@ -69,15 +69,16 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
-    --accent: #E4B8BF;
-    --secondary: #CEC4EF;
-    --t-accent: #E1BAC5;
-    --t-disabled: #8B8A91;
-    --t-bright: #E9E9F1;
-    --t-btn: #1F0D17;
-    --border-color: #303033;
-    --t-medium: #C7C6D3;
-    --border-dark: #4B4B51;
+    --accent: #F7B2B4; /* Rose Quartz */
+    --secondary: #A7C6E7; /* Serenity */
+    --t-accent: #F4A6AD; /* Lighter Rose Quartz */
+    --t-disabled: #B1A7B2; /* Muted Neutral */
+    --t-bright: #E9E9F1; /* Soft Bright */
+    --t-btn: #2D3A4C; /* Deep Teal for contrast */
+    --border-color: #E6B5C9; /* Soft Rose border */
+    --t-medium: #D2CDE8; /* Light Serenity shade */
+    --border-dark: #A7A2AD; /* Soft Grey */
+
   }
 }
 

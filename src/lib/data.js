@@ -131,19 +131,19 @@ export const ACHIEVEMENTS = [
 export const INFORMATIONS = [
   {
     label: "Name",
-    info: "Alex Walker",
+    info: "Jeanne Mari Abag",
   },
   {
     label: "Phone",
-    info: "+1 212-708-9400",
+    info: "+63 966 481 0660",
   },
   {
     label: "Email",
-    info: "hello@yourdomain.com",
+    info: "abagjeanne@gmail.com",
   },
   {
     label: "Location",
-    info: "Odesa, Ukraine",
+    info: "Manila, Philippines",
   },
 ];
 
@@ -179,63 +179,82 @@ export const SERVICES = [
 
 export const EDUCATIONS = [
   {
-    startDate: new Date(2015, 1),
-    endDate: new Date(2016, 1),
-    currentlyStudyHere: false,
-    description:
-      "Intensive drawing courses that present the fundamental principles of drawing.",
-    title: "Drawing Concentration",
-    source: "New York Academy of Art",
-  },
-  {
-    startDate: new Date(2019, 1),
-    endDate: new Date(2021, 1),
-    currentlyHere: false,
-    description:
-      "Research, design, and prototype effective, visually-driven websites and apps.",
-    title: "UI/UX Design Specialization",
-    source: "California Institute of Arts",
-  },
-  {
-    startDate: new Date(2022, 1),
-    endDate: new Date(),
+    startDate: new Date(2020, 0),
+    endDate: new Date(2024, 0),
     currentlyStudyHere: true,
     description:
-      "This cource is about how to complete the design process from beginning to end.",
-    title: "UI/UX Designer",
-    source: "Coursera",
+      "Bachelor of Science in Computer Science with a focus on front-end development and digital content strategies.",
+    title: "Bachelor of Science in Computer Science",
+    source: "Technological University of the Philippines - Manila",
+  },
+  {
+    startDate: new Date(2018, 0),
+    endDate: new Date(2020, 0),
+    currentlyHere: false,
+    description:
+      "Concentrated on Science, Technology, and Mathematics.",
+    title: "Science, Technology and Mathematics",
+    source: "La Salle College Antipolo",
   },
 ];
 
 export const EXPERIENCES = [
   {
-    startDate: new Date(2018),
-    endDate: new Date(2019),
-    currentlyStudyHere: false,
-    description:
-      "Intensive drawing courses that present the fundamental principles of drawing.",
-    title: "Illustrator",
-    source: "New York Academy of Art",
-  },
-  {
-    startDate: new Date(2019),
-    endDate: new Date(2021),
-    currentlyHere: false,
-    description:
-      "Research, design, and prototype effective, visually-driven websites and apps.",
-    title: "Graphic Designer",
-    source: "California Institute of Arts",
-  },
-  {
-    startDate: new Date(2021),
+    startDate: new Date(2024, 5),
     endDate: new Date(),
     currentlyStudyHere: true,
     description:
-      "This cource is about how to complete the design process from beginning to end.",
-    title: "UI/UX Designer",
-    source: "Coursera",
+      "Maintaining IT infrastructure for 80+ employees, leading front-end development, and providing technical support.",
+    title: "IT Specialist",
+    source: "Philippine Dragon Media Network",
+  },
+  {
+    startDate: new Date(2024, 2),
+    endDate: new Date(2024, 4),
+    currentlyHere: false,
+    description:
+      "Assisted with IT operations, technical support, and telecom logistics.",
+    title: "IT Specialist - Intern",
+    source: "Philippine Dragon Media Network",
+  },
+  {
+    startDate: new Date(2023, 9),
+    endDate: new Date(2024, 7),
+    currentlyHere: false,
+    description:
+      "Created engaging content and managed social media updates for improved online presence.",
+    title: "Social Media Management Committee - Assistant Head",
+    source: "TUP-Companion",
+  },
+  {
+    startDate: new Date(2022, 11),
+    endDate: new Date(2023, 6),
+    currentlyHere: false,
+    description:
+      "Developed content strategies to boost engagement and brand awareness.",
+    title: "Promotions and Social Media Lead",
+    source: "UX Society TUP-Manila",
+  },
+  {
+    startDate: new Date(2018, 7),
+    endDate: new Date(2020, 10),
+    currentlyHere: false,
+    description:
+      "Managed billing and collections, created employee IDs, and improved client communication.",
+    title: "Account Officer",
+    source: "SevenSeas Trucking",
+  },
+  {
+    startDate: new Date(2018, 3),
+    endDate: new Date(2018, 6),
+    currentlyHere: false,
+    description:
+      "Responsible for inputting, updating, and managing data in a computer system or database.",
+    title: "Data Encoder",
+    source: "RKJEER Services Inc.",
   },
 ];
+
 
 export const TOOLS = [
   {
@@ -294,11 +313,11 @@ export const TESTIMONIALS = [
 export const CONTACT_INFO = [
   {
     label: "Location",
-    value: "Odesa, Ukraine"
+    value: "Manila, Philippines"
   },
   {
     label: "Phone",
-    value: "+1 212-708-9400"
+    value: "+63 966 481 0660"
   },
   {
     label: "Email",

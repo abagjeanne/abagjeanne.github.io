@@ -1,19 +1,18 @@
-import { animate } from '@/lib/utils'
-import { useEffect, useRef } from 'react'
-import { ResumeDetails } from '@/components/data-display'
-import { EXPERIENCES } from '@/lib/data'
+import { animate } from "@/lib/utils";
+import { useEffect, useRef } from "react";
+import { ResumeDetails } from "@/components/data-display";
+import { EXPERIENCES } from "@/lib/data";
 
 const Experience = () => {
+  const experienceRef = useRef(null);
 
-  const experienceRef = useRef(null)
+  useEffect(() => {
+    const experienceAnimation = animate(experienceRef.current, 50);
 
-  useEffect(()=>{
-    const experienceAnimation = animate(experienceRef.current,50)
-
-    return ()=>{
-      experienceAnimation.revert()
-    }
-  },[])
+    return () => {
+      experienceAnimation.revert();
+    };
+  }, []);
 
   return (
     <div ref={experienceRef}>
@@ -27,6 +26,6 @@ const Experience = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Experience
+export default Experience;
