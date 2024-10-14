@@ -1,0 +1,15 @@
+.btn-caption{
+  transition: top 0.3s ease ;
+}
+
+.btn-caption-2{
+  transition: bottom 0.3s ease ;
+}
+
+.avatar-btn:hover .btn-caption{
+  top: -50px;
+}
+
+.avatar-btn:hover .btn-caption-2{
+  bottom: 0;
+}

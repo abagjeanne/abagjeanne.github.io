@@ -1,0 +1,13 @@
+.arrow-back{
+  transition: top ease-in 0.3s;
+}
+.arrow-front{
+  transition: bottom ease-in 0.3s;
+}
+
+.arrow:hover .arrow-back{
+  top: 0;
+}
+.arrow:hover .arrow-front{
+  bottom: -40px;
+}

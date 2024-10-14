@@ -1,0 +1,15 @@
+.social-icon_front {
+  transition: top 0.3s ease;
+}
+
+.social-icon_back {
+  transition: bottom 0.3s ease;
+}
+
+.social-icon:hover .social-icon_front {
+  top: -50px;
+}
+
+.social-icon:hover .social-icon_back {
+  bottom: 0;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #E7EBF4;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --accent: #AA70E0;
+    --secondary: #7059E2;
+    --t-accent: #8F56CC;
+    --t-disabled: #717586;
+    --t-bright: #22232C;
+    --t-btn: #E0E7FF;
+    --border-color: #d1d5e0;
+    --t-medium: #424550;
+    --border-dark: #a8b0c1;
+  }
+
+  .dark {
+    --background: #111111;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --accent: #E4B8BF;
+    --secondary: #CEC4EF;
+    --t-accent: #E1BAC5;
+    --t-disabled: #8B8A91;
+    --t-bright: #E9E9F1;
+    --t-btn: #1F0D17;
+    --border-color: #303033;
+    --t-medium: #C7C6D3;
+    --border-dark: #4B4B51;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground;
+    background: var(--background);
+    font-family: "Syne", system-ui;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .bg-btn {
+    background: linear-gradient(to right, var(--accent), var(--secondary));
+    ;
+  }
+
+  .text-disabled {
+    color: var(--t-disabled);
+  }
+
+  .text-bright {
+    color: var(--t-bright);
+  }
+
+  .text-medium {
+    color: var(--t-medium);
+  }
+
+  .text-btn {
+    color: var(--t-btn);
+  }
+
+  .t-accent {
+    color: var(--t-accent);
+  }
+
+  .border-box {
+    border: 1px solid var(--border-color);
+  }
+
+  .border-dark {
+    border: 1px solid var(--border-dark) !important;
+  }
+}
