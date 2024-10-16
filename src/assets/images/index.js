@@ -23,6 +23,8 @@ import illustratorLogo from "./icons/icon-illustrator.svg";
 import figmaLogo from "./icons/icon-figma.svg";
 import photoshopLogo from "./icons/icon-photoshop.svg";
 import tailwindLogo from "./icons/icon-tailwind.svg";
+import pythonLogo from "./icons/icon-python.svg";
+import jsLogo from "./icons/icon-js.svg";
 import t01 from "./avatars/400x400_t01.webp"
 import t02 from "./avatars/400x400_t02.webp"
 import lightModePic from "./avatars/3.png"
@@ -53,6 +55,8 @@ export {
   notionLogo,
   photoshopLogo,
   tailwindLogo,
+  pythonLogo,
+  jsLogo,
   wpLogo,
   t01,
   t02,

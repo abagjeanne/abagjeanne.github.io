@@ -9,6 +9,8 @@ import {
   photoshopLogo,
   pinterestDarkLogo,
   pinterestLogo,
+  pythonLogo,
+  jsLogo,
   t01,
   t02,
   c01,
@@ -227,7 +229,8 @@ export const EXPERIENCES = [
 ];
 
 
-export const TOOLS = [
+// Creative Tools
+export const CREATIVETOOLS = [
   {
     title: "Photoshop",
     image: photoshopLogo, 
@@ -240,6 +243,10 @@ export const TOOLS = [
     title: "Illustrator",
     image: illustratorLogo, 
   },
+];
+
+// Development Tools
+export const DEVTOOLS = [
   {
     title: "HTML5",
     image: htmlLogo, 
@@ -248,18 +255,10 @@ export const TOOLS = [
     title: "CSS3",
     image: cssLogo, 
   },
-  // {
-  //   title: "JavaScript",
-  //   image: jsLogo, 
-  // },
-  // {
-  //   title: "Bootstrap",
-  //   image: bootstrapLogo, 
-  // },
-  // {
-  //   title: "ReactJS",
-  //   image: reactLogo, 
-  // },
+  {
+    title: "Python",
+    image: pythonLogo, 
+  },
   {
     title: "Tailwind CSS",
     image: tailwindLogo, 
@@ -267,6 +266,26 @@ export const TOOLS = [
   {
     title: "WordPress",
     image: wpLogo, 
+  },
+  {
+    title: "JavaScript",
+    image: jsLogo, 
+  },
+  {
+    title: "GitHub",
+    // image: githubLogo, 
+  },
+  {
+    title: "VS Code",
+    // image: vscodeLogo,
+  },
+  {
+    title: "PyCharm",
+    // image: pycharmLogo, 
+  },
+  {
+    title: "Jupyter",
+    // image: jupyterLogo,
   },
 ];
 

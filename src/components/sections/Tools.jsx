@@ -1,4 +1,4 @@
-import { TOOLS } from "@/lib/data";
+import { CREATIVETOOLS, DEVTOOLS } from "@/lib/data";
 import { animate } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 import { ToolDetails } from "@/components/data-display";
@@ -20,10 +20,28 @@ const Tools = () => {
         My favourite tools
       </h3>
 
-      <div className="flex flex-wrap gap-5">
-        {TOOLS.map((tool, index) => (
-          <ToolDetails key={index} position={index} {...tool} />
-        ))}
+      {/* Creative Tools Section */}
+      <div className="mb-10">
+        <h4 className="text-bright 2xl:text-[36px] md:text-[28px] text-[24px] font-bold lg:mb-5 mb-4">
+          Creative Tools
+        </h4>
+        <div className="flex flex-wrap gap-5">
+          {CREATIVETOOLS.map((tool, index) => (
+            <ToolDetails key={index} position={index} {...tool} />
+          ))}
+        </div>
+      </div>
+
+      {/* Development Tools Section */}
+      <div>
+        <h4 className="text-bright 2xl:text-[36px] md:text-[28px] text-[24px] font-bold lg:mb-5 mb-4">
+          Development Tools
+        </h4>
+        <div className="flex flex-wrap gap-5">
+          {DEVTOOLS.map((tool, index) => (
+            <ToolDetails key={index} position={index} {...tool} />
+          ))}
+        </div>
       </div>
     </div>
   );

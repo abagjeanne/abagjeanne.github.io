@@ -4,7 +4,6 @@ import { animate } from "@/lib/utils";
 import {
   Education,
   Experience,
-  Testimonials,
   Tools,
 } from "@/components/sections";
 import { UseActiveLinkContext } from "@/context/ActiveLinkContext";
