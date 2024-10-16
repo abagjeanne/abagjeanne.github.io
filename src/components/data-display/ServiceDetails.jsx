@@ -1,7 +1,7 @@
 import { animate } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 
-const ServiceDetails = ({ title, touls, description, image, position }) => {
+const ServiceDetails = ({ title, touls, description, position }) => {
   const serviceRef = useRef(null);
   const titleRef = useRef(null);
   const toulsRef = useRef(null);
@@ -55,7 +55,6 @@ const ServiceDetails = ({ title, touls, description, image, position }) => {
         </div>
         <p ref={descriptionRef} className="text-medium 2xl:text-[20px] text-[18px] mt-6">{description}</p>
       </div>
-      <img ref={imageRef} className="w-full " src={image} alt="" />
     </div>
   );
 };

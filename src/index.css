@@ -4,46 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dark Mode Styles */
 @layer base {
   :root {
-    --background: #E7EBF4;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-
-    --accent: #AA70E0;
-    --secondary: #7059E2;
-    --t-accent: #8F56CC;
-    --t-disabled: #717586;
-    --t-bright: #22232C;
-    --t-btn: #E0E7FF;
-    --border-color: #d1d5e0;
-    --t-medium: #424550;
-    --border-dark: #a8b0c1;
-  }
-
-  .dark {
     --background: #111111;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -69,6 +32,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
+    /* Additional Custom Colors */
     --accent: #F7B2B4; /* Rose Quartz */
     --secondary: #A7C6E7; /* Serenity */
     --t-accent: #F4A6AD; /* Lighter Rose Quartz */
@@ -78,7 +42,44 @@
     --border-color: #E6B5C9; /* Soft Rose border */
     --t-medium: #D2CDE8; /* Light Serenity shade */
     --border-dark: #A7A2AD; /* Soft Grey */
+  }
 
+  .dark {
+    --background: #E7EBF4;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Additional Custom Colors for Dark Mode */
+    --accent: #AA70E0;
+    --secondary: #7059E2;
+    --t-accent: #8F56CC;
+    --t-disabled: #717586;
+    --t-bright: #22232C;
+    --t-btn: #E0E7FF;
+    --border-color: #d1d5e0;
+    --t-medium: #424550;
+    --border-dark: #a8b0c1;
   }
 }
 
@@ -101,7 +102,6 @@
 @layer components {
   .bg-btn {
     background: linear-gradient(to right, var(--accent), var(--secondary));
-    ;
   }
 
   .text-disabled {
@@ -132,3 +132,4 @@
     border: 1px solid var(--border-dark) !important;
   }
 }
+

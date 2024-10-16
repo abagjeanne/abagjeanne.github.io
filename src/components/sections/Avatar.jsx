@@ -7,7 +7,7 @@ const Avatar = () => {
   const { theme } = useTheme(); // Get the current theme
 
   return (
-    <div className="lg:sticky relative top-8 bg-[#ebf0f6] dark:bg-[#161616] lg:h-[calc(100vh-64px)] h-auto p-8 border border-box rounded-[40px] flex flex-col justify-between lg:gap-0 gap-4">
+    <div className="lg:sticky relative top-8 bg-[#161616] dark:bg-[#ebf0f6] lg:h-[calc(100vh-64px)] h-auto p-8 border border-box rounded-[40px] flex flex-col justify-between lg:gap-0 gap-4">
       <div className="">
         <div className="flex gap-5 2xl:mb-5 mb-[10px]">
           <p className="2xl:text-3xl text-[28px] font-bold text-bright leading-8">
@@ -17,8 +17,8 @@ const Avatar = () => {
         <div className="rounded-3xl overflow-hidden">
           <ImageWrapper 
             className="w-full" 
-            src={lightModePic} // Light mode image
-            srcForDarkMode={darkModePic} // Dark mode image
+            src={darkModePic} // Light mode image
+            srcForDarkMode={lightModePic} // Dark mode image
             alt="Jeanne Mari Abag" // Provide a meaningful alt text
           />
         </div>

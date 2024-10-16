@@ -1,30 +1,36 @@
 import { animate } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 
-const AchievementsDetails = ({ number, title, position,animationY }) => {
+const AchievementsDetails = ({ image, title, position, desc }) => {
   const achievementRef = useRef(null);
 
-  useEffect(()=>{
-    const y = 30 + parseInt(`${position}9`) 
-    
-    const achievementAnimation = animate(achievementRef.current, y)
+  useEffect(() => {
+    const y = 30 + parseInt(`${position}9`);
+    const achievementAnimation = animate(achievementRef.current, y);
 
-    return ()=>{
-      achievementAnimation.revert()
-    }
-  },[])
+    return () => {
+      achievementAnimation.revert();
+    };
+  }, []);
 
   return (
     <div
-      className="p-[25px] border-box rounded-3xl 2xl:w-[calc((100%/3)-(100px/3))] md:w-[calc((100%/3)-20px)] w-full text-center"
+      className="border-box rounded-3xl md:w-[calc(50%-16px)] w-full cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1"
       ref={achievementRef}
     >
-      <p className="2xl:text-[80px] xl:text-[70px] text-[60px] font-bold t-accent leading-none">
-        {number}
-      </p>
-      <p className="2xl:text-[20px] xl:text-[18px] font-bold text-bright mt-[6px]">
-        {title}
-      </p>
+      <div className="p-6 flex flex-col">
+        <img
+          src={image}
+          alt={title}
+          className="w-full rounded-lg object-cover mb-4"
+        />
+        <p className="text-[26px] lg:text-[30px] 2xl:text-[34px] font-bold text-bright leading-[35px] mb-2">
+          {title}
+        </p>
+        <div className="text-bright text-[16px] lg:text-[18px] 2xl:text-[20px] leading-relaxed max-w-prose">
+          {desc}
+        </div>
+      </div>
     </div>
   );
 };

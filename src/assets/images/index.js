@@ -9,14 +9,12 @@ import pinterestLogo from "./icons/pinterest-logo-light.svg";
 import pinterestDarkLogo from "./icons/pinterest-logo-dark.svg";
 import behanceLogo from "./icons/behance-logo-light.svg";
 import behanceDarkLogo from "./icons/behance-logo-dark.svg";
-import w01 from "./works/LMS.png";
-import w02 from "./works/MobilePortfolio.png";
-import w03 from "./works/800_w03-thumb.webp";
-import w04 from "./works/800_w04-thumb.webp";
-import s01 from "./services/1200x900_s01.webp";
-import s02 from "./services/1200x900_s02.webp";
-import s03 from "./services/1200x900_s03.webp";
-import s04 from "./services/1200x900_s04.webp";
+import c01 from "./certificates/cert_001.jpg";
+import c02 from "./certificates/cert_002.png";
+import w01 from "./works/port_001.png";
+import w02 from "./works/port_002.png";
+import w03 from "./works/port_003.png";
+import w04 from "./works/port_004.png";
 import wpLogo from "./icons/icon-wordpress.svg";
 import notionLogo from "./icons/icon-notion.svg";
 import cssLogo from "./icons/icon-css.svg";
@@ -42,14 +40,12 @@ export {
   dribbbleDarkLogo,
   behanceDarkLogo,
   pinterestDarkLogo,
+  c01,
+  c02,
   w01,
   w02,
   w03,
   w04,
-  s01,
-  s02,
-  s03,
-  s04,
   cssLogo,
   figmaLogo,
   htmlLogo,

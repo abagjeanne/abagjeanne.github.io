@@ -11,6 +11,8 @@ import {
   pinterestLogo,
   t01,
   t02,
+  c01,
+  c02,
   w01,
   w02,
   w03,
@@ -49,16 +51,16 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = [
-  {
-    icon: instagramLogo,
-    darkIcon: instagramDarkLogo,
-    url: "https://www.instagram.com/",
-  },
-  {
-    icon: pinterestLogo,
-    darkIcon: pinterestDarkLogo,
-    url: "https://www.pinterest.com/",
-  },
+  // {
+  //   icon: instagramLogo,
+  //   darkIcon: instagramDarkLogo,
+  //   url: "https://www.instagram.com/",
+  // },
+  // {
+  //   icon: pinterestLogo,
+  //   darkIcon: pinterestDarkLogo,
+  //   url: "https://www.pinterest.com/",
+  // },
 ];
 
 export const WORKS = [
@@ -66,41 +68,42 @@ export const WORKS = [
     title: "TEAMBA Learning Management System",
     image: w01,
     touls: ["PHP", "MySQL", "JS", "Full-Stack Dev"],
-    desc: "The system is a web application providing sex education for pre-teens (9-11 years old) in Barangay Maybunga. It offers a secure, intuitive platform with interactive content, fostering active learning. ",
+    description: "A web application providing comprehensive sex education for pre-teens (9-11 years old) in Barangay Maybunga. It features a secure and user-friendly platform with interactive content designed to foster active learning."
   },
   {
     title: "Personal Portfolio Project",
     image: w02,
     touls: ["UI Design", "Figma"],
-    desc: "Mauris porttitor lobortis ligula, quis molestie lorem scelerisque eu. Morbi aliquam enim odio,a mollis ipsum tristique eu.",
+    description: "A school project consisting of a Figma prototype for a personal portfolio. The design emphasizes clean UI/UX, showcasing project layouts and personal branding."
   },
-  // {
-  //   title: "Nearest Bus Stop Finder",
-  //   image: w03,
-  //   touls: ["Illustrations", "3D Render"],
-  //   desc: "Mauris porttitor lobortis ligula, quis molestie lorem scelerisque eu. Morbi aliquam enim odio,a mollis ipsum tristique eu.",
-  // },
-  // {
-  //   title: "Smart Penguin",
-  //   image: w04,
-  //   touls: ["Illustrations", "AI Experiment"],
-  //   desc: "Mauris porttitor lobortis ligula, quis molestie lorem scelerisque eu. Morbi aliquam enim odio,a mollis ipsum tristique eu.",
-  // },
+  {
+    title: "Nearest Bus Stop Finder",
+    image: w03,
+    touls: ["Flutter", "Dart", "Mobile Application"],
+    description: "A mobile app developed using Flutter and Dart, designed to help users locate the nearest bus stops in real-time, offering a seamless navigation experience."
+  },
+  {
+    title: "Meeting Room Booking System",
+    image: w04,
+    touls: ["Vue.js", "CSS", "JavaScript"],
+    description: "A responsive web application for booking meeting rooms, built with Vue.js. It allows users to reserve rooms, check availability, and manage bookings efficiently."
+  }
 ];
 
-export const ACHIEVEMENTS = [
-  {
-    title: "Happy clients",
-    number: "40+",
-  },
-  {
-    title: "Years of experience",
-    number: "2+",
-  },
-  {
-    title: "Projects done",
-    number: "50+",
-  },
+export const CERTIFICATES = [
+  // {
+  //   title: "Happy clients",
+  //   desc: "Mauris porttitor lobortis ligula, quis molestie lorem scelerisque eu. Morbi aliquam enim odio,a mollis ipsum tristique eu.",
+  //   image: c01,
+  // },
+  // {
+  //   title: "Years of experience",
+  //   number: "2+",
+  // },
+  // {
+  //   title: "Projects done",
+  //   number: "50+",
+  // },
 ];
 
 export const INFORMATIONS = [
@@ -127,25 +130,21 @@ export const SERVICES = [
     title: "Frontend Development & Web Design",
     touls: ["UI/UX", "Responsive Design"],
     description: "I specialize in creating user-friendly interfaces using HTML/CSS, JavaScript, ReactJS, Tailwind CSS, Bootstrap, and WordPress to enhance web accessibility and user experience.",
-    // image: s01,
   },
   {
     title: "Graphic Design & Digital Art",
     touls: ["Photoshop", "Illustrator", "Figma"],
     description: "I create compelling visual content using Adobe Photoshop, Illustrator, Fresco, Blender, and Figma, delivering high-quality illustrations, graphics, and 3D renders.",
-    // image: s02,
   },
   {
     title: "Digital Marketing & Social Media",
     touls: ["Strategy", "Analytics"],
     description: "I develop and implement social media strategies, create engaging content, monitor analytics, and optimize digital marketing campaigns to boost engagement and brand visibility.",
-    // image: s03,
   },
   {
     title: "Brand Identity & Visual Branding",
     touls: ["Logo Design", "Style Guides"],
     description: "I help clients create a distinct brand identity by designing logos, developing style guides, and establishing a consistent brand voice and visual presence.",
-    // image: s04,
   },
 ];
 

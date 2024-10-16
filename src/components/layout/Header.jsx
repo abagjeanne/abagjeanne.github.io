@@ -16,7 +16,7 @@ const Header = () => {
               <li
                 key={index}
                 className={`lg:backdrop-blur-sm rounded-3xl overflow-hidden xl:w-auto lg:w-[50px] w-[44px] lg:h-[50px] h-[44px] xl:h-[50px] flex items-center justify-center lg:bg-transparent lg:dark:bg-transparent
-                  ${activeLink == navLink.href.substring(1) && "lg:border-dark bg-[#111111] dark:bg-[#fafafa]"}
+                  ${activeLink == navLink.href.substring(1) && "lg:border-dark bg-[#fafafa] dark:bg-[#111111]"}
                   `}
               >
                 <a
@@ -24,7 +24,7 @@ const Header = () => {
                     xl:px-5 lg:hover:text-bright transition-colors h-full flex items-center justify-center
                     ${
                       activeLink == navLink.href.substring(1)
-                        ? "lg:text-bright lg:dark:text-[#E9E9F1] text-[#EBF0F7] dark:text-[#121319]"
+                        ? "lg:text-bright lg:dark:text-[#121319] text-[#EBF0F7] dark:text-[#E9E9F1]"
                         : "text-disabled"
                     }
                     `}
