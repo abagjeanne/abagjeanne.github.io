@@ -29,6 +29,7 @@ import t01 from "./avatars/400x400_t01.webp"
 import t02 from "./avatars/400x400_t02.webp"
 import lightModePic from "./avatars/3.png"
 import darkModePic from "./avatars/4.png"
+import w05 from "./works/Home.png";
 
 export {
   favicon,
@@ -48,6 +49,7 @@ export {
   w02,
   w03,
   w04,
+  w05,
   cssLogo,
   figmaLogo,
   htmlLogo,

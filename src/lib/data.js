@@ -19,6 +19,7 @@ import {
   w02,
   w03,
   w04,
+  w05,
   wpLogo,
   tailwindLogo,
 } from "@/assets/images";
@@ -96,7 +97,7 @@ export const WORKS = [
   },
   {
     title: "Fil-Chi Job Fair 2024 Website",
-    image: w04,
+    image: w05,
     touls: ["HTML", "CSS", "JavaScript"],
     description: "A collaborative effort to connect job seekers and employers at the Fil-Chi Job Fair 2024.",
     link: "https://www.filchi-jobfair.com/",
