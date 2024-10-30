@@ -70,27 +70,39 @@ export const WORKS = [
     title: "TEAMBA Learning Management System",
     image: w01,
     touls: ["PHP", "MySQL", "JS", "Full-Stack Dev"],
-    description: "A web application providing comprehensive sex education for pre-teens (9-11 years old) in Barangay Maybunga. It features a secure and user-friendly platform with interactive content designed to foster active learning."
+    description: "A web application providing comprehensive sex education for pre-teens (9-11 years old) in Barangay Maybunga. It features a secure and user-friendly platform with interactive content designed to foster active learning.",
+    link: "",
   },
   {
     title: "Personal Portfolio Project",
     image: w02,
-    touls: ["UI Design", "Figma"],
-    description: "A school project consisting of a Figma prototype for a personal portfolio. The design emphasizes clean UI/UX, showcasing project layouts and personal branding."
+    touls: ["UI Design", "Figma"], // Added touls
+    description: "A school project consisting of a Figma prototype for a personal portfolio. The design emphasizes clean UI/UX, showcasing project layouts and personal branding.",
+    link: "https://www.figma.com/proto/AkL7Yi1cGnVjXC9mLkbi5T/ABAG_FinalProject_Portfolio?node-id=0-1&t=rZUWpnivJvVBJp8u-1", // Optional: Add a link if needed
   },
   {
     title: "Nearest Bus Stop Finder",
     image: w03,
     touls: ["Flutter", "Dart", "Mobile Application"],
-    description: "A mobile app developed using Flutter and Dart, designed to help users locate the nearest bus stops in real-time, offering a seamless navigation experience."
+    description: "A mobile app developed using Flutter and Dart, designed to help users locate the nearest bus stops in real-time, offering a seamless navigation experience.",
+    link: "https://github.com/romanolester/BGC-Bus-Tracker", // Optional: Add a link if needed
   },
   {
     title: "Meeting Room Booking System",
     image: w04,
     touls: ["Vue.js", "CSS", "JavaScript"],
-    description: "A responsive web application for booking meeting rooms, built with Vue.js. It allows users to reserve rooms, check availability, and manage bookings efficiently."
+    description: "A responsive web application for booking meeting rooms, built with Vue.js. It allows users to reserve rooms, check availability, and manage bookings efficiently.",
+    link: "https://gdsbooking.netlify.app/dashboard",
+  },
+  {
+    title: "Fil-Chi Job Fair 2024 Website",
+    image: w04,
+    touls: ["HTML", "CSS", "JavaScript"],
+    description: "A collaborative effort to connect job seekers and employers at the Fil-Chi Job Fair 2024.",
+    link: "https://www.filchi-jobfair.com/",
   }
 ];
+
 
 export const CERTIFICATES = [
   // {

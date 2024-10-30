@@ -1,7 +1,7 @@
 import { animate } from "@/lib/utils";
 import { useEffect, useRef } from "react";
 
-const WorkDetails = ({ image, touls, position, title, description }) => {
+const WorkDetails = ({ image, touls, position, title, description, link }) => {
   const workRef = useRef(null);
 
   useEffect(() => {
@@ -20,10 +20,21 @@ const WorkDetails = ({ image, touls, position, title, description }) => {
           className="work-img absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 rounded-[30px] scale-110 hover:scale-100"
           alt={title}
         />
-        {/* Overlay for title and description */}
+        {/* Overlay for title, description, and button */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-[30px]">
           <h3 className="font-bold text-lg">{title}</h3>
           <p className="text-sm mt-1">{description}</p>
+          {/* Conditionally render the button if `link` is provided */}
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 px-4 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-300 transition duration-300"
+            >
+              View Project
+            </a>
+          )}
         </div>
       </div>
       <div className="absolute left-7 bottom-7 flex gap-1">
